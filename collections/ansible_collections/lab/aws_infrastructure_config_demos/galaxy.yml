@@ -1,0 +1,27 @@
+---
+namespace: lab
+name: aws_infrastructure_config_demos
+version: 4.0.0
+readme: README.md
+authors:
+  - Scott Harwell <sharwell@redhat.com>
+description: AWS infrastructure and reporting content vendored in ansible/product-demos.
+license:
+  - GPL-3.0-or-later
+license_file: "LICENSE"
+tags:
+  - "cloud"
+  - "aws"
+dependencies:
+  amazon.aws: ">=6.5.0"
+  amazon.cloud: ">=0.4.0"
+  community.aws: ">=6.3.0"
+repository: https://github.com/ansible/product-demos
+documentation: https://github.com/ansible/product-demos
+homepage: https://github.com/ansible/product-demos
+issues: https://github.com/ansible/product-demos/issues
+build_ignore:
+  - ".tox"
+  - ".git"
+  - ".github"
+  - ".gitignore"

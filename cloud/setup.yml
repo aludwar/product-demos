@@ -9,8 +9,8 @@ controller_templates:
     organization: Ansible Product Demos (APD)
     credentials:
       - AWS
-    project: Ansible Cloud Content Lab - AWS
-    playbook: playbooks/create_peer_network.yml
+    project: Ansible Product Demos
+    playbook: cloud/aws_lab/create_peer_network.yml
     inventory: Ansible Product Demos Inventory
     notification_templates_started: Telemetry
     notification_templates_success: Telemetry
@@ -25,8 +25,8 @@ controller_templates:
     organization: Ansible Product Demos (APD)
     credentials:
       - AWS
-    project: Ansible Cloud Content Lab - AWS
-    playbook: playbooks/delete_peer_network.yml
+    project: Ansible Product Demos
+    playbook: cloud/aws_lab/delete_peer_network.yml
     inventory: Ansible Product Demos Inventory
     notification_templates_started: Telemetry
     notification_templates_success: Telemetry
@@ -39,8 +39,8 @@ controller_templates:
     organization: Ansible Product Demos (APD)
     credentials:
       - AWS
-    project: Ansible Cloud Content Lab - AWS
-    playbook: playbooks/create_transit_network.yml
+    project: Ansible Product Demos
+    playbook: cloud/aws_lab/create_transit_network.yml
     inventory: Ansible Product Demos Inventory
     notification_templates_started: Telemetry
     notification_templates_success: Telemetry
@@ -55,8 +55,8 @@ controller_templates:
     organization: Ansible Product Demos (APD)
     credentials:
       - AWS
-    project: Ansible Cloud Content Lab - AWS
-    playbook: playbooks/delete_transit_network.yml
+    project: Ansible Product Demos
+    playbook: cloud/aws_lab/delete_transit_network.yml
     inventory: Ansible Product Demos Inventory
     notification_templates_started: Telemetry
     notification_templates_success: Telemetry
@@ -69,10 +69,9 @@ controller_templates:
     organization: Ansible Product Demos (APD)
     credentials:
       - AWS
-    project: Ansible Cloud AWS Demos
-    playbook: playbooks/cloud_report.yml
+    project: Ansible Product Demos
+    playbook: cloud/aws_lab/cloud_report.yml
     inventory: Ansible Product Demos Inventory
-    execution_environment: Cloud Services Execution Environment
     notification_templates_started: Telemetry
     notification_templates_success: Telemetry
     notification_templates_error: Telemetry
@@ -85,8 +84,8 @@ controller_templates:
     organization: Ansible Product Demos (APD)
     credentials:
       - AWS
-    project: Ansible Cloud Content Lab - AWS
-    playbook: playbooks/create_reports.yml
+    project: Ansible Product Demos
+    playbook: cloud/aws_lab/create_reports.yml
     inventory: Ansible Product Demos Inventory
     notification_templates_started: Telemetry
     notification_templates_success: Telemetry

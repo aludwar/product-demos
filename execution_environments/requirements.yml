@@ -38,6 +38,10 @@ collections:
   # cloud demos
   - name: amazon.aws
     version: ">=7.5.0"
+  - name: community.aws
+    version: ">=6.3.0"
+  - name: amazon.cloud
+    version: ">=0.4.0"
   # satellite demos
   - name: redhat.satellite
     version: ">=4.0.0"

@@ -10,11 +10,6 @@ gateway_role_user_assignments:
     object_ids:
       - Ansible Product Demos (APD)
 
-controller_execution_environments:
-  - name: Cloud Services Execution Environment
-    image: quay.io/scottharwell/cloud-ee:latest
-    organization: Ansible Product Demos (APD)
-
 controller_organizations:
   - name: Ansible Product Demos (APD)
     default_environment: Product Demos EE
@@ -22,21 +17,6 @@ controller_organizations:
 controller_inventories:
   - name: Ansible Product Demos Inventory
     organization: Ansible Product Demos (APD)
-
-controller_projects:
-  - name: Ansible Cloud Content Lab - AWS
-    organization: Ansible Product Demos (APD)
-    scm_type: git
-    wait: true
-    scm_url: https://github.com/ansible-content-lab/aws.infrastructure_config_demos.git
-    default_environment: Cloud Services Execution Environment
-
-  - name: Ansible Cloud AWS Demos
-    organization: Ansible Product Demos (APD)
-    scm_type: git
-    wait: true
-    scm_url: https://github.com/ansible-cloud/aws_demos.git
-    default_environment: Cloud Services Execution Environment
 
 controller_credentials:
   - name: AWS
@@ -214,8 +194,8 @@ controller_templates:
     credentials:
       - AWS
       - APD Machine Credential
-    project: Ansible Cloud Content Lab - AWS
-    playbook: playbooks/create_vm.yml
+    project: Ansible Product Demos
+    playbook: cloud/aws_lab/create_vm.yml
     inventory: Ansible Product Demos Inventory
     notification_templates_started: Telemetry
     notification_templates_success: Telemetry
@@ -301,8 +281,8 @@ controller_templates:
     credentials:
       - AWS
       - APD Machine Credential
-    project: Ansible Cloud Content Lab - AWS
-    playbook: playbooks/delete_inventory_vm.yml
+    project: Ansible Product Demos
+    playbook: cloud/aws_lab/delete_inventory_vm.yml
     inventory: Ansible Product Demos Inventory
     notification_templates_started: Telemetry
     notification_templates_success: Telemetry
